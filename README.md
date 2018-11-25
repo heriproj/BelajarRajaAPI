@@ -1,5 +1,5 @@
 # BelajarRajaAPI
-Ini file hasil belajar kotlin MVP patern dengan RAJA API
+Ini file hasil belajar kotlin MVP patern dengan RAJA API untuk mengambil data Provinsi
 
 # Raja API Doc
 <https://docs.rajaapi.com/dokumentasi/wilayah>
