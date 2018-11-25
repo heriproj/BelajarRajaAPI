@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity(), MainView {
 
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                var leagueName = spinner.selectedItem.toString()
                 toast("Anda Memilih Kota "+ provinsi.get(position).provName +" dengan id :" + provinsi.get(position).provId)
             }
             override fun onNothingSelected(parent: AdapterView<*>) {}
