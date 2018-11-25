@@ -40,28 +40,13 @@ class MainActivity : AppCompatActivity(), MainView {
             rightPadding = dip(16)
 
             spinner = spinner ()
-
-          /*  swipeRefresh = swipeRefreshLayout {
-                setColorSchemeResources(colorAccent,
-                    android.R.color.holo_green_light,
-                    android.R.color.holo_orange_light,
-                    android.R.color.holo_red_light)
-*/
                 relativeLayout{
                     lparams (width = matchParent, height = wrapContent)
-
-                   /* listTeam = recyclerView {
-                        lparams (width = matchParent, height = wrapContent)
-                        layoutManager = LinearLayoutManager(context)
-                    }*/
-
                     progressBar = progressBar {
                     }.lparams{
                         centerHorizontally()
                     }
                 }
-            //}
-
         }
 
         val request = ApiRepository()
@@ -97,10 +82,7 @@ class MainActivity : AppCompatActivity(), MainView {
             //provs.add(data.get(i).provName.toString())
             provs.add(data.get(i).provName.toString())
         }
-        /*println("Data Provinsi Raja ApI :" + data)
-        Log.e("Data Provinsi:", data.toString())
-        Log.e("Data Provinsi:", provinsi.toString())
-        */
+        
         val spinnerItems = provs
         Log.e("Data Spinner : ", spinnerItems.toString())
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerItems)
